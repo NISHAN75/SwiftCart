@@ -423,4 +423,9 @@ h6 {
 .product-card-wrapper .row {
     --bs-gutter-y: 30px;
 }
+.btn-close {
+    margin-left: auto;
+    margin-top: 15px;
+    margin-right: 15px;
+}
 /* product section end */
