@@ -16,27 +16,27 @@ const loadProduct = (products) => {
 
         cardElement.innerHTML = `
             <div class="card product-card h-100 shadow-sm border-0">
-                <div class="img-wrapper">
+                <div class="img-wrapper d-flex align-items-center justify-content-center">
                     <img src="${product.image}" alt="${product.title}">
                 </div>
                 <div class="card-body d-flex flex-column p-3">
-                    <div class="d-flex justify-content-between align-items-center mb-2">
+                    <div class="d-flex justify-content-between align-items-center mb-3">
                         <span class="badge category-badge rounded-pill px-2 py-1">${product.category}</span>
                         <div class="rating-text">
                             <i class="bi bi-star-fill rating-star"></i> ${product.rating?.rate || 'N/A'} (${product.rating?.count || 0})
                         </div>
                     </div>
-                    <h6 class="card-title text-truncate fw-semibold mb-1" style="font-size: 0.95rem;">${product.title}</h6>
+                    <h6 class="card-title text-truncate fw-semibold mb-3" style="font-size: 0.95rem;">${product.title}</h6>
                     <h5 class="fw-bold mb-3" style="color: #1f2937;">$${product.price}</h5>
                     
                     <div class="mt-auto row g-2">
                         <div class="col-6">
-                            <button class="btn btn-details w-100 d-flex align-items-center justify-content-center gap-1 py-2">
+                            <button class="swift-btn btn-details w-100 d-flex align-items-center justify-content-center gap-1 py-2">
                                 <i class="bi bi-eye"></i> Details
                             </button>
                         </div>
                         <div class="col-6">
-                            <button class="btn btn-add w-100 d-flex align-items-center justify-content-center gap-1 py-2">
+                            <button class=" btn-add swift-btn w-100 d-flex align-items-center justify-content-center gap-1 py-2">
                                 <i class="bi bi-cart3"></i> Add
                             </button>
                         </div>

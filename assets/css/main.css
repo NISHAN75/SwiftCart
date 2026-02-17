@@ -211,8 +211,9 @@ h6 {
     display: inline-block;
 }
 
-.swift-btn:hover{
-	background-color: transparent;
+.swift-btn:hover {
+    background-color: transparent;
+    color: #4F39F6;
 }
 /* all button */
 
@@ -382,5 +383,40 @@ h6 {
     background: #4F39F6;
     color: #fff;
     border-color: #4F39F6;
+}
+.img-wrapper {
+    background: #E5E7EB;
+    padding: 50px;
+    border-radius: 10px;
+    min-height: 400px;
+}
+.img-wrapper img {
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+}
+.category-badge {
+    color: #736DCA;
+    background: #E0E7FF;
+}
+.rating-text i {
+    color: #FDCA0C;
+}
+.rating-text {
+    color: #526578;
+}
+.card-title {
+    color: #A1A4AB;
+}
+.btn-details {
+    background: transparent;
+    color: #5d758d;
+    border-color: #5d758d;
+}
+.product-cat-wrapper{
+    margin-bottom: 50px;
+}
+.product-card-wrapper .row {
+    --bs-gutter-y: 30px;
 }
 /* product section end */
