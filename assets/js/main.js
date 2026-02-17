@@ -9,8 +9,6 @@ const loadProduct = (products) => {
     mainCardDiv.innerHTML = ''; // Clear container **once** before the loop
 
     products.forEach(product => {
-        console.log(product);
-
         const cardElement = document.createElement("div");
         cardElement.className = "col-lg-3";
 
@@ -55,7 +53,6 @@ const loadProductCat = (cat) => {
 	if(cat){
 		const formattedCat = cat.replaceAll(" ", "%20");
 		const url = `https://fakestoreapi.com/products/category/${formattedCat}`;
-		console.log(url);
 		fetch(`https://fakestoreapi.com/products/category/${formattedCat}`)
 		.then(res => res.json())
 		.then(data => loadProduct(data));
@@ -71,23 +68,35 @@ const dispalyCat = (cats) => {
 	const productCatsContainer = document.getElementById("product-cat-wrapper");
 	productCatsContainer.innerHTML = '';
 
+	const setActiveButton = (clickedBtn) => {
+        const buttons = productCatsContainer.querySelectorAll("button");
+        buttons.forEach(btn => btn.classList.remove("active"));
+        clickedBtn.classList.add("active");
+    }
+
 	// All button
 	const allBtn = document.createElement("button");
 	allBtn.innerText = "All";
+	allBtn.className="active";
 	allBtn.addEventListener("click", () => {
 		loadProductCat();
+		setActiveButton(allBtn);
 	});
 	productCatsContainer.append(allBtn);
 
 	// Category buttons
 	for (let cat of cats) {
-		const catDiv = document.createElement("button");
-		catDiv.innerText = cat;
-		catDiv.addEventListener("click", () => {
+		const catButton = document.createElement("button");
+		catButton.innerText = cat;
+		catButton.addEventListener("click", () => {
 			loadProductCat(cat);
+			setActiveButton(catButton);
 		});
-		productCatsContainer.append(catDiv);
+		productCatsContainer.append(catButton);
 	}
 }
 loadProductCat();
 loadCat();
+
+
+

@@ -374,11 +374,12 @@ h6 {
     padding: 5px 30px;
     text-align: center;
     border-radius: 30px;
-    margin: 0 10px;
+    margin: 0;
     text-transform: capitalize;
     background: #fff;
     transition: all 0.3s linear;
 }
+.product-cat-wrapper button.active ,
 .product-cat-wrapper button:hover{
     background: #4F39F6;
     color: #fff;
@@ -412,6 +413,9 @@ h6 {
     background: transparent;
     color: #5d758d;
     border-color: #5d758d;
+}
+.btn-details:hover{
+    border-color: #4F39F6;
 }
 .product-cat-wrapper{
     margin-bottom: 50px;
