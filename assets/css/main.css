@@ -1,0 +1,386 @@
+/*
+  The Name:
+  Author: 
+  Support: 
+  Description: 
+  Version: 1.0
+*/
+
+/* CSS Index
+-----------------------------------
+1.default css
+-----------------------------------
+*/
+/* ============================ deafult section start ============================== */
+/* google fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+.tk-roboto{
+    font-family: "Roboto", sans-serif;
+}
+.tk-rubik{
+    font-family: "Rubik", sans-serif;
+}
+
+
+body {
+	font-size: 16px;
+	line-height: 1.5;
+	font-weight: 400;
+    font-family: "Roboto", sans-serif;
+	color: #8D93A0;
+}
+
+/* lenis */
+html.lenis,
+html.lenis body {
+	height: auto;
+}
+
+.lenis.lenis-smooth {
+	scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+	overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+	overflow: hidden;
+}
+
+/* lenis */
+
+/* scroll bar */
+.os-scrollbar-handle {
+	background: #E06138;
+}
+
+body>.os-scrollbar {
+	z-index: 999;
+}
+
+/* scroll bar */
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+/* animation */
+.animation-line {
+	overflow: hidden;
+}
+
+/* animation */
+
+a {
+	text-decoration: none;
+	color: #000;
+}
+/* 
+a:hover {
+	color: #000;
+} */
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+.bg-fix {
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+/* container */
+.container {
+	max-width: 1404px;
+}
+
+/* z-index */
+.z-4 {
+	z-index: 4 !important;
+}
+
+.z-5 {
+	z-index: 5 !important;
+}
+
+.z-6 {
+	z-index: 6 !important;
+}
+
+/* z-index */
+
+/* input */
+input[type="text"], input[type="email"], input[type="tel"], input[type="number"], input[type="password"], input[type="url"], textarea {
+    width: 100%;
+    padding: 11px 12px;
+    background: #fff;
+    border: 1px solid #000;
+    color: #505050;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    opacity: 1;
+    border-radius: 8px;
+    display: block;
+}
+
+textarea {
+	height: 144px;
+}
+
+input:focus,
+textarea:focus {
+	outline: none;
+	box-shadow: none;
+}
+
+::placeholder {
+    color: #505050;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+/* input */
+
+
+.animation-line p:last-child,
+.mb-p p:last-child {
+	margin-bottom: 0;
+}
+
+/* heading  style*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: #000;
+	font-weight: 600;
+	line-height: 1.2;
+    font-family: "Rubik", sans-serif;
+}
+
+h1 {
+	font-size: 56px;
+}
+
+h2 {
+	font-size: 40px;
+}
+
+h3 {
+	font-size: 36px;
+}
+
+h4 {
+	font-size: 30px;
+}
+
+h5 {
+	font-size: 24px;
+}
+
+h6 {
+	font-size: 20px;
+}
+.container {
+    max-width: 1200px;
+}
+
+/* all button */
+.swift-btn {
+    font-size: 16px;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 1.5;
+    color: #fff;
+    background-color: #4F39F6;
+    border: 1px solid #4F39F6;
+    transition: all 0.3s linear;
+    padding: 10px 25px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.swift-btn:hover{
+	background-color: transparent;
+}
+/* all button */
+
+/* common class */
+.section-padding{
+	padding: 100px 0;
+}
+/* common class */
+
+/* header section start */
+.header-area {
+    padding: 15px 0;
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.footer-menu-wrapper ul ,
+.main-menu {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.main-menu li {
+    display: inline-block;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.footer-about-info h6,
+.header-logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: #513BF6;
+}
+.main-menu.text-center li a {
+    font-size: 18px;
+    font-weight: 500;
+    color: #88909A;
+	transition: all 0.3s linear;
+}
+.main-menu.text-center li:hover a{
+	color: #513BF6;
+}
+.cart-btn {
+    border: 0;
+    background: transparent;
+    padding: 0;
+    margin: 0;
+}
+/* header section end */
+
+/* banner section start */
+.banner-area::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+	background-color: #000;
+	opacity: 0.8;
+}
+.banner-area {
+    padding: 100px 0;
+}
+.banner-content p,
+.banner-content h1 {
+    color: #fff;
+}
+.banner-content h1{
+	font-size: 48px;
+}
+.banner-content .swift-btn{
+	margin-top: 15px;
+}
+.banner-content {
+    max-width: 550px;
+}
+
+/* banner section end */
+
+/* why choose section start */
+.why-choose-us-area {
+    background: #F9FAFB;
+}
+.choose-card-area{
+	margin-top: 70px;
+}
+.choose-card-icon {
+    display: inline-block;
+    background: #EEF2FF;
+    padding: 5px 10px;
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+.choose-card-wrapper {
+    background: #fff;
+    padding: 50px 20px 30px;
+    border-radius: 5px;
+	min-height: 200px;
+}
+.choose-card-icon{
+	position: absolute;
+	left: 20px;
+	top: 0;
+	transform: translateY(-50%);
+}
+/* why choose section end */
+
+/* footer section start */
+.footer-area {
+    background: #1E2939;
+    padding: 50px 0 20px;
+}
+.footer-menu-wrapper h6 {
+    color: #576170;
+    font-size: 18px;
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+.footer-menu-wrapper ul li{
+	margin-bottom: 15px;
+}
+.footer-menu-wrapper ul li:last-child{
+	margin-bottom: 0;
+}
+.footer-menu-wrapper ul li a {
+    color: #727986;
+	transition: all 0.3s linear;
+}
+.footer-menu-wrapper ul li:hover a{
+	color: #4F39F6;
+}
+.footer-subscribe-wrapper h6 {
+    font-size: 16px;
+    color: #808997;
+}
+.footer-subscribe-wrapper p {
+    margin: 0;
+    font-size: 14px;
+}
+.footer-subscribe-form {
+    margin-top: 25px;
+}
+.social-links-wrapper a {
+    color: #fff;
+    margin-left: 15px;
+}
+.footer-bottom {
+    border-top: 1px solid #fff;
+    padding: 15px 0;
+    margin-top: 20px;
+}
+/* footer section end */
+
+
+/* product section start */
+.product-cat-wrapper button {
+    border: 1px solid #D6D8DC;
+    padding: 5px 30px;
+    text-align: center;
+    border-radius: 30px;
+    margin: 0 10px;
+    text-transform: capitalize;
+    background: #fff;
+    transition: all 0.3s linear;
+}
+.product-cat-wrapper button:hover{
+    background: #4F39F6;
+    color: #fff;
+    border-color: #4F39F6;
+}
+/* product section end */
